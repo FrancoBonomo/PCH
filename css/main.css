@@ -369,4 +369,30 @@ footer {
 .fab {
   color: #fff; }
 
+/* header */
+header ul li a {
+  color: #fff;
+  /* cambiar color despues*/
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  transition: color 0.5s;
+  font-size: 20px; }
+
+#navbar__logo:hover {
+  animation-name: shake-logo;
+  animation-duration: 0.75s; }
+
+/* animaciones */
+@keyframes shake-logo {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(-5deg); }
+  75% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 /*# sourceMappingURL=main.css.map */
