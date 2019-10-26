@@ -1,0 +1,27 @@
+@import "reset";
+@import "normalize";
+
+/* Main */
+body {
+	background-color: #222831;
+}
+
+/* Footer */
+footer {
+	border-top: 2px solid #e2e2e2;
+  	padding: 5px 0px;
+
+  	ul {
+  		margin-right: 5px;
+
+  		li {
+  			float: right;
+  			margin: 10px;
+  		}
+  	}
+}
+
+.fab /* clase iconos */ {
+  color: #fff; 
+}
+
