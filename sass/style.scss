@@ -11,14 +11,14 @@ footer {
 	border-top: 2px solid #e2e2e2;
   	padding: 5px 0px;
 
-  	ul {
+  ul {
   		margin-right: 5px;
 
-  		li {
+  	li {
   			float: right;
   			margin: 10px;
-  		}
-  	}
+    }
+ 	}
 }
 
 .fab /* clase iconos */ {
@@ -28,7 +28,11 @@ footer {
 /* header */
 
 header {
-	ul {
+  nav {
+    background-color: #000;
+  }
+	
+  ul {
 		li { 
 			a {
  				color: #fff;
@@ -38,9 +42,17 @@ header {
   				transition: color 0.5s;
   				font-size: 20px; 
   			}
-  		}
+
+      a:hover {
+           color: #ff2121;
+      }
   	}
+  }
 }  		
+
+#navbar__menu__icon{
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 #navbar__logo:hover {
   animation-name: shake-logo;
