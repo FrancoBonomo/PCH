@@ -1,23 +1,53 @@
 @import "reset";
 @import "normalize";
 
-/* Main */
+/* General */
 body {
-	background-color: #222831;
+	background-color: #242424;
+	color: white;
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1rem 0px; }
+
+h2 {
+  font-size: 2.05rem; }
+
+h3 {
+  font-size: 1.85rem; }
+
+h4 {
+  font-size: 1.65rem; }
+
+h5 {
+  font-size: 1.45rem; }
+
+h6 {
+  font-size: 1.25rem; }
+
 
 /* Footer */
 footer {
 	border-top: 2px solid #e2e2e2;
-  	padding: 5px 0px;
 
-  ul {
-  		margin-right: 5px;
+  	ul {
+  		margin-right: 0.5rem;
 
-  	li {
+  		li {
   			float: right;
-  			margin: 10px;
-    }
+  			margin: 0.5rem 0.75rem;
+  			padding: 0.5rem 0rem;
+   		}
  	}
 }
 
@@ -28,12 +58,12 @@ footer {
 /* header */
 
 header {
-  nav {
-    background-color: #000;
-  	z-index: 1;
-  }
+  	nav {
+    	background-color: #000;
+  		z-index: 1;
+  	}
 	
-  ul {
+  	ul {
 		li { 
 			a {
  				color: #fff;
@@ -41,58 +71,64 @@ header {
   				font-family: 'Oswald', sans-serif;
   				font-weight: 300;
   				transition: color 0.5s;
-  				font-size: 20px; 
+  				font-size: 1.25rem; 
   			}
 
-      a:hover {
-           color: #ff2121;
-      }
+      		a:hover {
+        	   color: #ff2121;
+      		}
+  		}
   	}
-  }
 }  		
 
+.header__text--margin{
+	margin-top: 1.5rem;
+}
+
 #navbar__menu__icon{
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 #navbar__logo:hover {
-  animation-name: shake-logo;
-  animation-duration: 0.75s; }
+  	animation-name: shake-logo;
+  	animation-duration: 0.75s; 
+}
 
 /* index */
 
 #index__background {
-  z-index: -100;
+  	z-index: -100;
 }
 
 /* index background video*/
 
 header {
-  position: relative;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+  	position: relative;
+ 	height: 75vh;
+ 	min-height: 25rem;
+  	width: 100%;
+  	overflow: hidden;
 
   	video {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  min-width: 100%;
-	  min-height: 100%;
-	  width: auto;
-	  height: auto;
-	  z-index: -100;
-	  -ms-transform: translateX(-50%) translateY(-50%);
-	  -moz-transform: translateX(-50%) translateY(-50%);
-	  -webkit-transform: translateX(-50%) translateY(-50%);
-	  transform: translateX(-50%) translateY(-50%);
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	min-width: 100%;
+	  	min-height: 100%;
+	  	width: auto;
+	  	height: auto;
+	  	z-index: -100;
+	  	-ms-transform: translateX(-50%) translateY(-50%);
+	  	-moz-transform: translateX(-50%) translateY(-50%);
+	  	-webkit-transform: translateX(-50%) translateY(-50%);
+	  	transform: translateX(-50%) translateY(-50%);
 	}
 
 	.container {
  		position: relative;
  	 	z-index: 2;
 	}
+
 	.overlay {
 	  	position: absolute;
 	  	top: 0;
@@ -106,24 +142,25 @@ header {
 }
 
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("../img/index__background--alt.jpg") black no-repeat center center scroll;
+  	header {
+    	background: url("../img/index__background--alt.jpg") black no-repeat center center scroll;
   
-	video {
-    	display: none;
+		video {
+    		display: none;
+  		}
   	}
-  }
 }
 
 /* animaciones */
 @keyframes shake-logo {
-  0% {
-    transform: rotate(0deg); }
-  25% {
-    transform: rotate(5deg); }
-  50% {
-    transform: rotate(-5deg); }
-  75% {
-    transform: rotate(3deg); }
-  100% {
-    transform: rotate(0deg); } }
+  	0% {
+    	transform: rotate(0deg); }
+  	25% {
+    	transform: rotate(5deg); }
+  	50% {
+    	transform: rotate(-5deg); }
+  	75% {
+    	transform: rotate(3deg); }
+  	100% {
+    	transform: rotate(0deg); } 
+}
