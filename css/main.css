@@ -396,6 +396,16 @@ p {
   margin: 1rem 0px;
   line-height: 1.2; }
 
+.card {
+  background-color: black;
+  margin: 1rem; }
+
+.text__title {
+  display: inline-block;
+  width: 100%;
+  color: #3A9D94;
+  text-shadow: 3px 3px 3px black; }
+
 /* Footer */
 footer {
   border-top: 2px solid #e2e2e2; }
@@ -477,14 +487,10 @@ header ul li a:hover {
     .nav__background video {
       display: none; } }
 /* discografia */
-.card {
-  background-color: black;
-  margin: 1rem; }
-
-.card-title {
+.card-title--discografia {
   background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
   height: 30%; }
-  .card-title h4 {
+  .card-title--discografia h4 {
     margin: 1rem; }
 
 /* Merch */
