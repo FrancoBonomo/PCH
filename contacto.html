@@ -4,16 +4,16 @@
 <head>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <meta charset="UTF-8">
-  <meta name="description" content="Pagina web de Caracol a contramano">
-  <meta name="keywords" content="Caracol,A,Contramano,Musica,Canciones,Album">
+  <meta name="description" content="Contactanos - Caracol a contramano">
+  <meta name="keywords" content="Caracol A Contramano,Musica,Canciones,Album,contacto,contactanos,contactar">
   <meta name="author" content="Franco Bonomo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caracol a contramano</title>
+  <title>Contacto - Caracol a contramano</title>
   <script src="https://kit.fontawesome.com/ebce8412ea.js" crossorigin="anonymous"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -50,41 +50,43 @@
   </header>
   <main>
     <h1 class="display-1 text-center text__title"> Contacto </h1>
-    <form action="" method="POST">
-      <div class="form-row">
-        <div class="form-group col-5 offset-1">
-          <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" name="nombre" placeholder="Nombre" id="nombre" />
+    <div class="container">
+      <form action="" method="POST">
+        <div class="form-row">
+          <div class="form-group col-5 offset-1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" placeholder="Nombre" id="nombre" />
+          </div>
+          <div class="form-group col-5">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" name="apellido" placeholder="Apellido" id="apellido" />
+          </div>
+          <div class="form-group col-10 offset-1">
+            <label for="email">Email:</label>
+            <input type="emial" class="form-control" name="email" placeholder="ejemplo@email.com" id="email" />
+          </div>
+          <div class="form-group col-10 offset-1">
+            <label for="motivo">Motivo de contacto:</label>
+            <select name="motivo" class="form-control" id="motivo">
+              <option value="contrataciones">Contrataciones</option>
+              <option value="prensa">Prensa</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group col-10 offset-1">
+            <label for="motivo">Comentario:</label> 
+            <textarea maxlength="1000" class="form-control" id="comentario" placeholder="(1000 caracteres máximo)"></textarea>
+          </div>
+          <div class="form-group col-10 offset-1">
+            <input type="checkbox" name="urgente" value="1" id="urgente" />
+            <label for="urgente">Seleccione esta casilla si es urgente</label>
+          </div>
+          <div class="form-group col-10 offset-1">
+            <input type="reset" value="Reset" class="btn btn-danger btn--input"/> <input type="submit" value="Enviar" class="btn btn-success btn--input"/>
+          </div>
         </div>
-        <div class="form-group col-5">
-          <label for="apellido">Apellido:</label>
-          <input type="text" class="form-control" name="apellido" placeholder="Apellido" id="apellido" />
-        </div>
-        <div class="form-group col-10 offset-1">
-          <label for="email">Email:</label>
-          <input type="emial" class="form-control" name="email" placeholder="ejemplo@email.com" id="email" />
-        </div>
-        <div class="form-group col-10 offset-1">
-          <label for="motivo">Motivo de contacto:</label>
-          <select name="motivo" class="form-control" id="motivo">
-            <option value="contrataciones">Contrataciones</option>
-            <option value="prensa">Prensa</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
-        <div class="form-group col-10 offset-1">
-          <label for="motivo">Comentario:</label> 
-          <textarea maxlength="1000" class="form-control" id="comentario" placeholder="(1000 caracteres máximo)"></textarea>
-        </div>
-        <div class="form-group col-10 offset-1">
-          <input type="checkbox" name="urgente" value="1" id="urgente" />
-          <label for="urgente">Seleccione esta casilla si es urgente</label>
-        </div>
-        <div class="form-group col-10 offset-1">
-          <input type="reset" value="Reset" class="btn btn-danger"/> <input type="submit" value="Enviar" class="btn btn-success"/>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </main>
   <footer>
     <ul>
